@@ -1,11 +1,11 @@
 import mysql from "mysql2/promise";
 
 const dbConfig = {
-  host: "localhost",
-  user: "papers_user",
-  password: "paperspass123",
-  database: "papers_db",
-  port: 3306,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: Number(process.env.DB_PORT),
 };
 
 export async function createConnection() {
@@ -24,7 +24,7 @@ export async function getSemesters() {
     const [rows] = await connection.execute(
       "SELECT DISTINCT semester FROM papers ORDER BY semester"
     );
-    return rows; // No type assertion needed
+    return rows;
   } finally {
     await connection.end();
   }

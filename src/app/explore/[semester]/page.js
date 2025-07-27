@@ -4,6 +4,7 @@ import { ExternalLink, FileText } from "lucide-react";
 import Link from "next/link";
 
 export default async function SubjectPage({ params }) {
+  params = await params;
   const semester = parseInt(params.semester);
   const subjects = await getSubjectsBySemester(semester);
 

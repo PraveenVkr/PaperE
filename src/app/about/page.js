@@ -20,10 +20,12 @@ export default function About() {
                 Our Mission
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                This is a template About Us page. You can customize this content
-                to describe your organization's mission, values, and goals.
-                Replace this placeholder text with information about your
-                institution, team, or purpose.
+                Papers Explorer was created with a simple goal: to make
+                accessing college papers easier for students like us. We noticed
+                how hard it was to navigate our college’s DSpace portal, and
+                decided to build something better — a faster, cleaner, and more
+                user-friendly alternative. Our mission is to help students save
+                time and frustration while studying.
               </p>
             </div>
           </div>
@@ -37,9 +39,11 @@ export default function About() {
                 Our Team
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Add information about your team members, contributors, or the
-                people behind this platform. You can include their roles,
-                expertise, and contributions to the project.
+                I'm a solo developer working on this project, but the idea was
+                born through discussions with two of my friends. Together, we
+                were frustrated by the clunky and outdated UI of our college’s
+                DSpace portal — so we brainstormed a better way. I took the lead
+                on building it, with their input shaping the vision.
               </p>
             </div>
           </div>
@@ -53,9 +57,12 @@ export default function About() {
                 Our Vision
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Describe your vision for the future of academic resource
-                sharing, your goals for the platform, or how you plan to expand
-                and improve the service for users.
+                We want to improve how academic resources are accessed —
+                starting with our own college. Over time, we hope to expand this
+                platform and make it available to students in other institutions
+                facing similar problems. The goal is simple: make study
+                materials easier to find and more accessible to everyone who
+                needs them.
               </p>
             </div>
           </div>
