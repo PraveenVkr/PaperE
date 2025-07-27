@@ -24,7 +24,7 @@ export async function getSemesters() {
     const [rows] = await connection.execute(
       "SELECT DISTINCT semester FROM papers ORDER BY semester"
     );
-    return rows; // Removed TypeScript type assertion
+    return rows; // No type assertion needed
   } finally {
     await connection.end();
   }
